@@ -87,6 +87,15 @@ const ChatContainer = () => {
           alt=""
           className='md:hidden max-w-7' />
 
+        {selectedUser && (
+          <button
+            className='md:hidden ml-auto text-white'
+            onClick={() => setShowRightSidebar(true)}
+          >
+            ℹ️
+          </button>
+        )}
+
         <img
           src={assets.help_icon}
           alt=""
